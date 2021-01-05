@@ -1,3 +1,104 @@
+### 4.0.0 (April 14, 2020)
+
+* 🎉 Server-level config! Support httpd configuration at main server level.
+  Add `httpd.conf` file, vhost management, secure HTTP tweaking, etc. See the [README](https://github.com/h5bp/server-configs-apache)
+  [[b50205a...c302596](https://github.com/h5bp/server-configs-apache/compare/df7857d...c302596)]
+* ⚠️ **Breaking**: End of support for Apache httpd version 2.4.9 and below
+  [[baa9cdd](https://github.com/h5bp/server-configs-apache/commit/baa9cdd5567b25d9434b06937a436ceccadb6b4c)]
+* ⚠️ **Breaking**: File paths changes for the `.htaccess` build system
+  [[478ceab](https://github.com/h5bp/server-configs-apache/commit/478ceab3a28786856a1ffcdf6a943ee43907caf0)]
+  [[9cb2763](https://github.com/h5bp/server-configs-apache/commit/9cb2763d7f5e3fce984bfdea903e9df61cdf4bcd)]
+* Rewrite, improve and update a large part of the documentation
+  [[5dc823c](https://github.com/h5bp/server-configs-apache/commit/5dc823c18e4a0ee163c2ee3b772060bce7d782e6)]
+  [[5748d26](https://github.com/h5bp/server-configs-apache/commit/5748d26258394005b4d6dbb2f8474b58ed276e95)]
+  [[d8553ee](https://github.com/h5bp/server-configs-apache/commit/d8553ee58f307419d9ec39ab8c60fc6a6e1135cb)]
+  [[6862ac1](https://github.com/h5bp/server-configs-apache/commit/6862ac17ed60042c4eb47b56c8da055e99ad4dac)]
+  [[ade3659](https://github.com/h5bp/server-configs-apache/commit/ade3659f49b5e23c93695b6888f92bfda3b3f2ed)]
+* Default to HSTS only over secure connections
+  [[5bbc0a1](https://github.com/h5bp/server-configs-apache/commit/5bbc0a1ded8b306ca900338136a50d17eb304b94)]
+* Stricter default for Referrer Policy `strict-origin-when-cross-origin`
+  [[43bcb83](https://github.com/h5bp/server-configs-apache/commit/43bcb833eb0539800e0d3e8a19ad3ef1d6944592)]
+* Add APNG (`.apng`) MIME type
+  [[ad25d31](https://github.com/h5bp/server-configs-apache/commit/ad25d3185fb28971a83e8c721567d7ce08b76f38)]
+* Ensure the presence of security headings where expected
+  [[d656422](https://github.com/h5bp/server-configs-apache/commit/d65642225cf080c15ace94816bed9f15080471b1)]
+  [[43bcb83](https://github.com/h5bp/server-configs-apache/commit/43bcb833eb0539800e0d3e8a19ad3ef1d6944592)]
+  [[d84d94c](https://github.com/h5bp/server-configs-apache/commit/d84d94c7e1e3e647a6ff3b0d29a780481a0638d8)]
+* Make disabling TRACE method usable in a `.htaccess` file
+  [[9ae931c](https://github.com/h5bp/server-configs-apache/commit/9ae931cfe5bc4fe8af0fca21094ad93d4437cfaa)]
+* Improve inline comments.
+
+### 3.2.1 (May 8, 2019)
+
+* Fix npm releasing
+  [[4b0ee86](https://github.com/h5bp/server-configs-apache/commit/4b0ee8643c2c4f7dafafca82be67dc3309c0b479)]
+
+### 3.2.0 (May 6, 2019)
+
+* Enhance CSP policy
+  [[f48934b](https://github.com/h5bp/server-configs-apache/commit/f48934b6a1fe0f7de356f57911844bc006bdd9ec)]
+* Common headers addition based on MIME-types instead of file extensions
+  [[a880772...64cb33d](https://github.com/h5bp/server-configs-apache/compare/012cb6d...64cb33d)]
+* Always unset `X-Powered-By` header
+  [[1470258](https://github.com/h5bp/server-configs-apache/commit/14702588b130451f45cb2c1ae18a42fe70e4a922)]
+* Support hashed asset names in cache-busting
+  [[33f8006](https://github.com/h5bp/server-configs-apache/commit/33f800642a65b6f209243d3c2e266b82dbf7982f)]
+* Switch `application/vnd.geo+json` to `application/geo+json`
+  [[35cbd63](https://github.com/h5bp/server-configs-apache/commit/35cbd63662c491b8025e35cc6362dbfba5aeae82)]
+* New test system using [server-configs-test](https://github.com/h5bp/server-configs-test)
+  [[3ae257c](https://github.com/h5bp/server-configs-apache/commit/3ae257ce57e9458c3a335fe65ff61498d1b0eb45)]
+* Improve inline comments.
+
+### 3.1.0 (February 8, 2019)
+
+* Remove P3P iframe cookies directives
+  [[ccce7b8](https://github.com/h5bp/server-configs-apache/commit/ccce7b85ab9f2c81c7aa66f94c31e2accfc7b22d)]
+* Add `TraceEnable Off` directive
+  [[0a2f70e](https://github.com/h5bp/server-configs-apache/commit/0a2f70e5270f96d08ab94bb5f7a9091bcdc03909)]
+* Support hashed asset names in cache-busting
+  [[33f8006](https://github.com/h5bp/server-configs-apache/commit/33f800642a65b6f209243d3c2e266b82dbf7982f)]
+* Allow SSL certificate set up over HTTP
+  [[54b6176..993127d](https://github.com/h5bp/server-configs-apache/compare/9481d53..993127d)]
+* Rename cache expiration rules file to `cache_expiration.conf` to make it more generic
+  [[11690c6](https://github.com/h5bp/server-configs-apache/commit/11690c60880682973854e17117bd5c3f17cd175a)]
+* Improve inline comments.
+
+### 3.0.0 (April 16, 2018)
+
+* ⚠️ **Breaking**: End of support for Apache httpd version 2.3 and below
+  [[7d296c3](https://github.com/h5bp/server-configs-apache/commit/7d296c35c7337ca183bd31326e10e15d54ca187b)]
+* 🎉 New build system! Configurable build and customizable generation. See the [README](https://github.com/h5bp/server-configs-apache#custom-htaccess-builds)
+  [[5896349](https://github.com/h5bp/server-configs-apache/commit/589634974291a4a9ee1fd2a99c23794036e9aace)]
+* Add Referrer-Policy header template
+  [[591083e](https://github.com/h5bp/server-configs-apache/commit/591083eedc654837c051ca1aff4282444dc06471)]
+* Switch back `.js`-files and `.mjs`-files media-type to `text/javascript`
+  [[690f4ad](https://github.com/h5bp/server-configs-apache/commit/690f4ad6add3a3c2185641474e05378000a19d84)]
+* Add pre-compressed content handling template
+  [[52639ab](https://github.com/h5bp/server-configs-apache/commit/52639ab1fa97d666f3b262e04f70ab3ce020d0d0)]
+* Add WebAssembly module (`.wasm`) MIME type
+  [[a2e7d7b](https://github.com/h5bp/server-configs-apache/commit/a2e7d7b38cf96b804a7323362ee72950e51810f5)]
+* Improve inline comments.
+
+### 2.15.0 (October 8, 2017)
+
+* Serve `.md` and `.markdown` files as `text/markdown`
+  [[bfcafd3](https://github.com/h5bp/server-configs-apache/commit/bfcafd36b42f8118306ce3f9c17d6463692b4be0)].
+* Add font MIME types per RFC 8081
+  [[20b446e](https://github.com/h5bp/server-configs-apache/commit/20b446e2ad6e1eec68b50277a894876e41395403)].
+* Mark `.mjs` files as JavaScript
+  [[c00975c](https://github.com/h5bp/server-configs-apache/commit/c00975c74bde80175684314c883c09ab04b5bccc)].
+* Add calendar filetype (`.ics`)
+  [[002a110](https://github.com/h5bp/server-configs-apache/commit/002a110bf35c25af66ab09ef1bd724ece5fd8266)].
+* Block Mercurial `.orig` files
+  [[4c13648](https://github.com/h5bp/server-configs-apache/commit/4c1364885477e836fec24a6d8330cba69cf3d3a0)].
+* Fix enforcing www/no-www with HTTPS
+  [[fc747bb](https://github.com/h5bp/server-configs-apache/commit/fc747bbdf0a0c224ec08d8b925f33671e4d5046d)].
+* Drop Bower support
+  [[ee6cd75](https://github.com/h5bp/server-configs-apache/commit/ee6cd751f0b907239a032ec5477ee3bfbc2bc570)].
+* Fix HTTPS enforcement rule
+  [[11e523d](https://github.com/h5bp/server-configs-apache/commit/11e523d10ad8bb604fe692ec8d1fd40adc0010fa)].
+* Improve inline comments.
+
 ### 2.14.0 (April 4, 2015)
 
 * Update the web app manifest file related configs
